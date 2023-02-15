@@ -1,0 +1,23 @@
+.menu-entete-container {
+    .menu {
+        //UL
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    .menu-item {
+        flex: 1 0 70px;
+
+        //LI
+        a {
+            padding: 3px 5px;
+            color: #555;
+        }
+
+        a:hover {
+            color: #0f0;
+        }
+    }
+}
