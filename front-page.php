@@ -3,7 +3,7 @@
 
 <?php get_header() ?>
 <main>
-    <code>front-page.php</code>
+    <h3>front-page.php</h3>
 <?php 
 if (have_posts()):
     while (have_posts()): the_post();
@@ -19,7 +19,7 @@ if (have_posts()):
         the_excerpt();
 
         //trim quoi? un excerpt, 4 mots
-        echo wp_trim_words(get_the_excerpt(), 4 );
+        ?><p><?php echo wp_trim_words(get_the_excerpt(), 4 );?></p><?php
     endwhile;
 endif;
 ?>

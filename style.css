@@ -391,24 +391,16 @@ P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
 }
 
-h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  /*font-family: "Slackey", cursive;*/
-}
-
+h1,
+h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
+h6,
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: helvetica, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .menu-entete-container .menu {
@@ -416,14 +408,26 @@ p {
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
+  background-color: black;
+  padding: 25px;
+  margin: 0;
+  text-transform: uppercase;
 }
+
 .menu-entete-container .menu-item {
   flex: 1 0 70px;
 }
+
 .menu-entete-container .menu-item a {
-  padding: 3px 5px;
-  color: #555;
+  padding: 25px;
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
 }
+
 .menu-entete-container .menu-item a:hover {
-  color: #0f0;
-}/*# sourceMappingURL=style.css.map */
+  color: grey;
+  transition-duration: 1s;
+}
+
+/*# sourceMappingURL=style.css.map */

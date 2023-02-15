@@ -19,7 +19,7 @@ if (have_posts()):
         the_excerpt();
 
         //trim quoi? un excerpt, 4 mots
-        echo wp_trim_words(get_the_excerpt(), 4 );
+        ?><p><?php echo wp_trim_words(get_the_excerpt(), 4 );?></p><?php
     endwhile;
 endif;
 ?>
