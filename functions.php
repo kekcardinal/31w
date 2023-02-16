@@ -8,7 +8,7 @@ function ajouter_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'ajouter_styles' );//similaire à un addEventListener en javascript
 
-add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
+add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
 
 add_theme_support('title-tag');
 add_theme_support('custom-logo', array('height' => 150, 'width' =>150,));
