@@ -1,4 +1,15 @@
+.site_entete {}
+
+.logomenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu-entete-container {
+
+    flex-grow: 1;
+
     .menu {
         //UL
         display: flex;

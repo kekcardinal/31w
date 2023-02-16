@@ -398,9 +398,17 @@ h4,
 h5,
 h6,
 p {
-  margin-left: 25px;
-  margin-right: 25px;
   font-family: helvetica, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-entete-container {
+  flex-grow: 1;
 }
 
 .menu-entete-container .menu {
@@ -408,10 +416,6 @@ p {
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
-  background-color: black;
-  padding: 25px;
-  margin: 0;
-  text-transform: uppercase;
 }
 
 .menu-entete-container .menu-item {
@@ -419,15 +423,12 @@ p {
 }
 
 .menu-entete-container .menu-item a {
-  padding: 25px;
-  color: white;
-  text-decoration: none;
-  font-family: helvetica;
+  padding: 3px 5px;
+  color: #555;
 }
 
 .menu-entete-container .menu-item a:hover {
-  color: grey;
-  transition-duration: 1s;
+  color: #0f0;
 }
 
 /*# sourceMappingURL=style.css.map */
