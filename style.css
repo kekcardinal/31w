@@ -431,4 +431,15 @@ p {
   color: #0f0;
 }
 
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blocflex article {
+  border: 1px #aaa;
+  flex: 1 0 300px;
+}
+
 /*# sourceMappingURL=style.css.map */
