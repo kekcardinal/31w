@@ -4,6 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+}
+
+.logomenu img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
 }
 
 .menu-entete-container {
@@ -16,19 +23,26 @@
         justify-content: flex-end;
         flex-wrap: wrap;
         list-style-type: none;
+
+        min-height: 10vh;
     }
 
     .menu-item {
         flex: 1 0 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         //LI
         a {
             padding: 3px 5px;
-            color: #555;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
         }
 
         a:hover {
-            color: #0f0;
+            color: beige;
         }
     }
 }

@@ -32,6 +32,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a,
+li {
   font-family: helvetica, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }/*# sourceMappingURL=heading.css.map */

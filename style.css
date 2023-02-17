@@ -397,7 +397,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a,
+li {
   font-family: helvetica, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -405,30 +407,39 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
+}
+
+.logomenu img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
 }
 
 .menu-entete-container {
   flex-grow: 1;
 }
-
 .menu-entete-container .menu {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
+  min-height: 10vh;
 }
-
 .menu-entete-container .menu-item {
   flex: 1 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .menu-entete-container .menu-item a {
   padding: 3px 5px;
-  color: #555;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-
 .menu-entete-container .menu-item a:hover {
-  color: #0f0;
+  color: beige;
 }
 
 .blocflex {
@@ -436,10 +447,7 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .blocflex article {
   border: 1px #aaa;
   flex: 1 0 300px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
