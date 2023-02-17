@@ -419,6 +419,7 @@ li {
 .menu-entete-container {
   flex-grow: 1;
 }
+
 .menu-entete-container .menu {
   display: flex;
   justify-content: flex-end;
@@ -426,18 +427,21 @@ li {
   list-style-type: none;
   min-height: 10vh;
 }
+
 .menu-entete-container .menu-item {
   flex: 1 0 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .menu-entete-container .menu-item a {
   padding: 3px 5px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .menu-entete-container .menu-item a:hover {
   color: beige;
 }
@@ -447,7 +451,14 @@ li {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .blocflex article {
-  border: 1px #aaa;
   flex: 1 0 300px;
-}/*# sourceMappingURL=style.css.map */
+  margin: 10px;
+  border-radius: 25px;
+  border-style: none;
+  padding: 15px;
+  background-color: #aaa;
+}
+
+/*# sourceMappingURL=style.css.map */

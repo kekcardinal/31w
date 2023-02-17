@@ -4,7 +4,11 @@
     flex-wrap: wrap;
 
     article {
-        border: 1px #aaa;
         flex: 1 0 300px;
+        margin: 10px;
+        border-radius: 25px;
+        border-style: none;
+        padding: 15px;
+        background-color: #aaa;
     }
 }
