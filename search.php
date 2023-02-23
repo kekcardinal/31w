@@ -9,7 +9,7 @@
 get_header(); ?>
 <main>
     <code>search.php</code>
-    <section>
+    <section class="recherche">
     <?php 
         if (have_posts()) :
             while(have_posts()) : the_post();
@@ -19,8 +19,9 @@ get_header(); ?>
             <article>
                 <h5><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h5>
 
-                <?php wp_trim_words(get_the_excerpt(), 4);?>
+                <?= wp_trim_words(get_the_excerpt(), 50);?>
             </article>
+            <hr>
             <?php endwhile;
         endif;
     ?>
