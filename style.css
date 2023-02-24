@@ -444,7 +444,8 @@ html {
 
 .btn_orange {
   background-color: rgb(255, 198, 91);
-  padding: 25px;
+  padding: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
   border-radius: 10px;
   border-style: none;
   display: inline-block;
