@@ -14,16 +14,14 @@
                     <!-- //contenu -->
                     <!-- the_content(); -->
 
-                    <h3><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h3>
+                    <h3><?= get_the_title(); ?></h3>
                     <?php
                     //résumé
                     the_excerpt();
-
+                    
                     //trim quoi? un excerpt, 4 mots
                     ?>
-                    <p>
-                        <?php echo wp_trim_words(get_the_excerpt(), 4); ?>
-                    </p>
+                    <a class="btn_orange" href="<?php the_permalink(); ?>">Voir l'article</a>
                 </article>
                 <?php
             endwhile;

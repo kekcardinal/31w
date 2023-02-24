@@ -8,7 +8,7 @@ modele search.php affiche les resultats de recherche.
 */
 get_header(); ?>
 <main>
-    <code>search.php</code>
+    <h3 class="marge_entete">search.php</h3>
     <section class="blocflex">
         <?php
         if (have_posts()):
@@ -18,9 +18,10 @@ get_header(); ?>
                 //the_permalink(); ?>
 
                 <article class="informations">
-                    <h5><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h5>
+                <h3><?= get_the_title(); ?></h3>
 
-                    <?= wp_trim_words(get_the_excerpt(), 50); ?>
+                    <p><?= wp_trim_words(get_the_excerpt(), 50); ?></p>
+                    <a class="btn_orange" href="<?php the_permalink(); ?>">Voir l'article</a>
                 </article>
                 <hr>
             <?php endwhile;

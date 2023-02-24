@@ -21,6 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@300&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -402,7 +403,25 @@ a,
 li {
   color: white;
   text-decoration: none;
-  font-family: helvetica, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+p, ul, li {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+code {
+  font-family: "Crimson Text", serif;
+}
+
+.site_entete a {
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -420,6 +439,16 @@ a {
 html {
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23575757' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+  word-break: break-all;
+}
+
+.btn_orange {
+  background-color: rgb(255, 198, 91);
+  padding: 25px;
+  border-radius: 10px;
+  border-style: none;
+  display: inline-block;
+  color: black;
 }
 
 .logomenu {
@@ -434,8 +463,8 @@ html {
 }
 
 .logomenu img {
-  width: 75px;
-  height: 75px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -459,6 +488,7 @@ html {
   padding: 3px 5px;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 13pt;
 }
 .menu-entete-container .menu-item a:hover {
   color: beige;

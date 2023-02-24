@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@300&display=swap');
+
+
 h1 {
     font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
 }
@@ -37,9 +40,27 @@ a,
 li {
     color: white;
     text-decoration: none;
-    font-family: helvetica, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    // font-family: helvetica, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+p, ul, li {
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+code{
+    font-family: 'Crimson Text', serif;
+
+}
+
+.site_entete a {
+    font-family: 'Roboto', sans-serif;
+}
 a {
     text-decoration: underline;
 }
