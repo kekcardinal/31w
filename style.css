@@ -450,6 +450,7 @@ html {
   border-style: none;
   display: inline-block;
   color: black;
+  text-decoration: none;
 }
 
 .logomenu {
