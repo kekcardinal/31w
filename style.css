@@ -401,7 +401,7 @@ h6,
 p,
 a,
 li {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -422,24 +422,19 @@ code {
 
 .site_entete a {
   font-family: "Roboto", sans-serif;
+  color: #FFF7EC;
 }
 
 a {
   text-decoration: underline;
 }
 
-.marge_entete {
-  margin: 25px;
-}
-
 .logomenu img {
-  margin: 25px;
+  margin: 10px;
 }
 
 html {
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23575757' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
-  word-break: break-all;
+  background-color: #FFF7EC;
 }
 
 .btn_orange {
@@ -451,22 +446,52 @@ html {
   display: inline-block;
   color: black;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.texte_image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  overflow: hidden;
+  min-height: 90vh;
+}
+
+.texte_image div {
+  color: white;
+  margin: 50px;
+  position: relative;
+  max-width: 70ch;
+}
+
+/* Version avec balise d'image */
+.texte_image {
+  background-color: black;
+}
+
+.texte_image img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.texte_image h1, .texte_image h2, .texte_image h3 {
+  color: #FFF7EC;
 }
 
 .logomenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: #002720;
 }
 
 .logomenu img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
@@ -505,13 +530,6 @@ html {
   flex: 1 0 300px;
   margin: 25px;
   padding: 25px;
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.7px);
-  -webkit-backdrop-filter: blur(1.7px);
-  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .recherche article {

@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <main>
-    <h3 class="marge_entete">single.php</h3>
+    <!-- <h3 class="marge_entete">single.php</h3> -->
     <section class="blocflex">
         <?php
         if (have_posts()):
