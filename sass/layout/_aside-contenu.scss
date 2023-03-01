@@ -1,7 +1,7 @@
 .site_entete {
     grid-area: header;
-    padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: antiquewhite;
+    // padding: 1rem clamp(1rem, 3vw, 20rem);
+    // background-color: antiquewhite;
   }
   
   .site_main {
@@ -14,7 +14,7 @@
     background-color: antiquewhite;
   }
 
-/* Body ou division globale
+
   .site {
     display: grid;
     grid-template-columns: auto;
@@ -22,6 +22,5 @@
       "header"
       "main"
       "footer";
-    row-gap: 50px;
+    // row-gap: 50px;
   }
-  */
