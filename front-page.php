@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main>
+<main class="site_main">
     <!-- <h3 class="marge_entete">front-page.php</h3> -->
     <section class="texte_image">
         <img src="http://aecweb5.sg-host.com/wp-content/uploads/2023/02/image_hero-scaled.jpg" alt="">

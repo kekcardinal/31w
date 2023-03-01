@@ -537,4 +537,33 @@ html {
 .recherche article {
   background-color: azure;
   margin: 10px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* -------------------------------layout --------------------------------*/
+.site_entete {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: antiquewhite;
+}
+
+.site_main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site_footer {
+  grid-area: footer;
+  background-color: antiquewhite;
+}
+
+/* Body ou division globale
+  .site {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    row-gap: 50px;
+  }
+  *//*# sourceMappingURL=style.css.map */

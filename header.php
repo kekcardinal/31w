@@ -9,7 +9,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="site">
     <header class="site_entete">
         <section class="logomenu">
             <?php the_custom_logo(); ?>

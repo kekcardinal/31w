@@ -1,6 +1,6 @@
 
 <?php get_header() ?>
-<main class="site__main">
+<main class="site_main">
    <section class="blocflex">
       <?php
       $category = get_queried_object();

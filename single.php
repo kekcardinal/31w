@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main>
+<main class="site_main">
     <!-- <h3 class="marge_entete">single.php</h3> -->
     <section class="blocflex">
         <?php

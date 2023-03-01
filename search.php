@@ -7,7 +7,7 @@
 modele search.php affiche les resultats de recherche.
 */
 get_header(); ?>
-<main>
+<main class="site_main">
     <!-- <h3 class="marge_entete">search.php</h3> -->
     <section class="blocflex">
         <?php
