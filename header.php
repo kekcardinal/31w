@@ -32,3 +32,14 @@
         </section>
 
     </header>
+    <aside class="site_aside">
+        <h3>menu Secondaire</h3>
+        <?php 
+        
+        
+        $category = get_queried_object();
+        wp_nav_menu(array(
+            "menu" => "cours",
+            "container" => "nav"
+        ));?>
+    </aside>
