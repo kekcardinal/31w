@@ -10,7 +10,7 @@ $duree = "90h";
 
 ?>
 
-<article>
+<article class="blocflex_article">
     <h2><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h2>
     <h6><?= $titre_long ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>

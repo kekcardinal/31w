@@ -18,7 +18,12 @@
             while (have_posts()):
                 the_post(); ?>
 
-                <?php get_template_part("template-parts/categorie","31w")?>
+                <?php if (in_category('galerie')){
+                    get_template_part("template-parts/categorie","galerie");
+                }else{
+                 get_template_part("template-parts/categorie","31w");
+                }
+                ?>
                 <?php
             endwhile;
         endif;
