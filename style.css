@@ -544,6 +544,29 @@ html {
   margin: 10px;
 }
 
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  list-style-type: none;
+}
+.menu-cours-container .menu .menu-item a .cours_titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours_titre {
+    display: block;
+  }
+}
+
 /* -------------------------------layout --------------------------------*/
 .site_entete {
   grid-area: header;
