@@ -392,6 +392,11 @@ P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
 }
 
+.site_entete a p {
+  font-family: "Roboto", sans-serif;
+  color: #FFF7EC;
+}
+
 h1,
 h2,
 h3,
@@ -418,11 +423,6 @@ h6,
 a,
 code {
   font-family: "Crimson Text", serif;
-}
-
-.site_entete a {
-  font-family: "Roboto", sans-serif;
-  color: #FFF7EC;
 }
 
 a {
@@ -482,6 +482,11 @@ html {
   color: #FFF7EC;
 }
 
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .logomenu {
   display: flex;
   justify-content: space-between;
@@ -493,6 +498,20 @@ html {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.menusearch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 1000px) {
+  .menusearch {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .menu-entete-container {
@@ -512,6 +531,7 @@ html {
   justify-content: center;
 }
 .menu-entete-container .menu-item a {
+  white-space: nowrap;
   padding: 3px 5px;
   text-decoration: none;
   text-transform: uppercase;
