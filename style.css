@@ -511,33 +511,66 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    flex: 1;
+  }
+}
+
+#chkBurger:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+
+#chkBurger {
+  display: none;
+}
+
+.burger {
+  display: block;
+}
+@media screen and (min-width: 500px) {
+  .burger {
+    display: none;
   }
 }
 
 .menu-entete-container {
-  flex-grow: 1;
+  transform: translateX(300px);
+  transition: transform 0.25s;
 }
-.menu-entete-container .menu {
+@media screen and (min-width: 500px) {
+  .menu-entete-container {
+    transform: translateX(0);
+  }
+}
+
+.menu {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
   list-style-type: none;
-  min-height: 10vh;
 }
-.menu-entete-container .menu-item {
+@media screen and (min-width: 400px) {
+  .menu {
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.menu-item {
   flex: 1 0 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu-entete-container .menu-item a {
+.menu-item a {
   white-space: nowrap;
   padding: 3px 5px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 13pt;
 }
-.menu-entete-container .menu-item a:hover {
+.menu-item a:hover {
   color: beige;
 }
 
