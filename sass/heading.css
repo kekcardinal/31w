@@ -27,11 +27,6 @@ P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
 }
 
-.site_entete a p {
-  font-family: "Roboto", sans-serif;
-  color: #FFF7EC;
-}
-
 h1,
 h2,
 h3,
@@ -58,6 +53,11 @@ h6,
 a,
 code {
   font-family: "Crimson Text", serif;
+}
+
+.site_entete a {
+  font-family: "Roboto", sans-serif;
+  color: #FFF7EC;
 }
 
 a {
