@@ -62,15 +62,16 @@
         align-items:flex-end;
         justify-content:flex-start;
         list-style-type: none;
+
         @media screen and (min-width:400px){
             justify-content: flex-end;
             flex-direction:row;
             align-items:center;
         }
         
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
       
-        // min-height: 10vh;
+        min-height: 10vh;
     }
 
     .menu-item {

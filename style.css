@@ -548,6 +548,8 @@ html {
   align-items: flex-end;
   justify-content: flex-start;
   list-style-type: none;
+  flex-wrap: wrap;
+  min-height: 10vh;
 }
 @media screen and (min-width: 400px) {
   .menu {
