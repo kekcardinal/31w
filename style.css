@@ -485,19 +485,63 @@ html {
 .recherche {
   display: flex;
   flex-wrap: nowrap;
+  margin: 10px;
 }
 
+#chkBurger {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .burger {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  #chkBurger:checked ~ .menu-entete-container {
+    display: none;
+  }
+  #chkBurger:checked ~ .recherche {
+    display: none;
+  }
+  #chkBurger:not(:checked) ~ .recherche {
+    display: block;
+  }
+  .burger {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 720px) {
+  .burger {
+    display: none;
+  }
+}
 .logomenu {
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
   background-color: #002720;
 }
+.logomenu p {
+  color: #fff7ec;
+}
+@media screen and (min-width: 720px) {
+  .logomenu {
+    flex-flow: row;
+  }
+}
 
-.logomenu img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.logomenu a img {
+  display: none;
+}
+@media screen and (min-width: 720px) {
+  .logomenu a img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
 }
 
 .menusearch {
@@ -517,27 +561,54 @@ html {
 .menu-entete-container {
   flex-grow: 1;
 }
-.menu-entete-container .menu {
+
+.menu-entete-container,
+.recherche {
+  flex-wrap: wrap;
+}
+.menu-entete-container .menu,
+.recherche .menu {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style-type: none;
+  padding: 0px;
+  flex-direction: row;
   min-height: 10vh;
 }
-.menu-entete-container .menu-item {
+.menu-entete-container .menu,
+.recherche .menu {
+  flex-direction: column;
+}
+@media screen and (min-width: 720px) {
+  .menu-entete-container .recherche,
+  .menu-entete-container .menu-entete-container,
+  .recherche .recherche,
+  .recherche .menu-entete-container {
+    display: flex;
+  }
+  .menu-entete-container .menu,
+  .recherche .menu {
+    flex-direction: row;
+  }
+}
+.menu-entete-container .menu-item,
+.recherche .menu-item {
   flex: 1 0 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu-entete-container .menu-item a {
+.menu-entete-container .menu-item a,
+.recherche .menu-item a {
   white-space: nowrap;
   padding: 3px 5px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 13pt;
 }
-.menu-entete-container .menu-item a:hover {
+.menu-entete-container .menu-item a:hover,
+.recherche .menu-item a:hover {
   color: beige;
 }
 

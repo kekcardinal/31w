@@ -12,6 +12,8 @@
 <body class="site <?= (is_front_page()?"no-aside":""); ?>">
     <header class="site_entete">
         <section class="logomenu">
+        <!-- <div class="menusearch"> -->
+                <input type="checkbox" id="chkBurger" checked>
             <?php the_custom_logo(); ?>
             <?php wp_nav_menu(
                 array(
@@ -21,6 +23,10 @@
             ); ?>
 
             <?= get_search_form(); ?>
+            <label for="chkBurger" class="burger">
+                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" height="20px" width="20px">
+                </label>
+        <!-- </div> -->
         </section>
         <section class="marge_entete">
 
