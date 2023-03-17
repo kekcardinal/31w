@@ -1,30 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@300&display=swap");
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --font-size-sm: clamp(0.8rem, 0.19vw + 0.76rem, 0.89rem);
+    --font-size-base: clamp(1rem, 0.39vw + 0.92rem, 1.19rem);
+    --font-size-md: clamp(1.25rem, 0.7vw + 1.11rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1.15vw + 1.33rem, 2.11rem);
+    --font-size-xl: clamp(1.95rem, 1.81vw + 1.59rem, 2.81rem);
+    --font-size-xxl: clamp(2.44rem, 2.75vw + 1.89rem, 3.75rem);
+    --font-size-xxxl: clamp(3.05rem, 4.1vw + 2.23rem, 5rem);
+  }
+}
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+  :root {
+    --font-size-sm: 0.8rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.25rem;
+    --font-size-lg: 1.56rem;
+    --font-size-xl: 1.95rem;
+    --font-size-xxl: 2.44rem;
+    --font-size-xxxl: 3.05rem;
+  }
+  @media screen and (min-width: 1080px) {
+    :root {
+      --font-size-sm: 0.89rem;
+      --font-size-base: 1.19rem;
+      --font-size-md: 1.58rem;
+      --font-size-lg: 2.11rem;
+      --font-size-xl: 2.81rem;
+      --font-size-xxl: 3.75rem;
+      --font-size-xxxl: 5rem;
+    }
+  }
+}
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-size: var(--font-size-xxl);
 }
 
 h2 {
-  font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  font-size: var(--font-size-xl);
 }
 
 h3 {
-  font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  font-size: var(--font-size-lg);
 }
 
 h4 {
-  font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+  font-size: var(--font-size-md);
 }
 
 h5 {
-  font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+  font-size: clamp(1.3rem, -0.0313rem + 1.7vw, 1.5625rem);
 }
 
 h6 {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  font-size: clamp(1.25rem, 0.125rem + 1.2vw, 1.25rem);
 }
 
 P {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  font-size: var(--font-size-base);
 }
 
 h1,
@@ -40,7 +75,9 @@ li {
   text-decoration: none;
 }
 
-p, ul, li {
+p,
+ul,
+li {
   font-family: "Roboto", sans-serif;
 }
 
@@ -57,7 +94,7 @@ code {
 
 .site_entete a {
   font-family: "Roboto", sans-serif;
-  color: #FFF7EC;
+  color: #fff7ec;
 }
 
 a {
