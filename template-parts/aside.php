@@ -1,5 +1,5 @@
 <aside class="site_aside">
-        <h3>menu Secondaire</h3>
+        <!-- <h3>menu Secondaire</h3> -->
         <?php 
         $lemenu = "31w";
 

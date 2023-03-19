@@ -26,6 +26,7 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
   /* 2 */
 }
 
@@ -653,6 +654,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 25px;
 }
 
 .blocflex_article {
@@ -664,6 +666,9 @@ html {
 }
 
 @media screen and (min-width: 720px) {
+  .blocflex {
+    padding: 50px;
+  }
   .blocflex_article {
     flex: 1 0 300px;
     margin: 25px;
@@ -679,6 +684,10 @@ html {
 .recherche article {
   background-color: azure;
   margin: 10px;
+}
+
+.menu-31w-container ul {
+  padding: 0px;
 }
 
 .menu-cours-container .menu {
@@ -704,7 +713,51 @@ html {
   }
 }
 
+footer .menu {
+  list-style: none;
+}
+
+footer {
+  background-color: #002720;
+}
+footer * {
+  color: #fff7ec;
+}
+footer .menu {
+  min-height: 10vh;
+}
+footer .menu-item {
+  flex: 1 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .menu-item a {
+  white-space: nowrap;
+  padding: 3px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13pt;
+}
+
+@media screen and (min-width: 720px) {
+  footer .menu {
+    display: flex;
+    flex-flow: row;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer .menu {
+    display: flex;
+    flex-flow: column;
+  }
+}
 /* -------------------------------layout --------------------------------*/
+.site_aside {
+  text-align: center;
+  padding: 50px;
+}
+
 .site_entete {
   grid-area: header;
 }
@@ -716,7 +769,10 @@ html {
 
 .site_footer {
   grid-area: footer;
-  background-color: antiquewhite;
+}
+
+aside nav ul li {
+  list-style: none;
 }
 
 .site {

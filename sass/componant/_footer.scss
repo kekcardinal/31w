@@ -1,0 +1,47 @@
+footer {
+  .menu {
+    list-style: none;
+  }
+}
+
+footer {
+  * {
+    color: #fff7ec;
+  }
+  background-color: #002720;
+
+  .menu {
+    min-height: 10vh;
+  }
+  .menu-item {
+    flex: 1 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    //LI
+    a {
+      white-space: nowrap;
+      padding: 3px 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 13pt;
+    }
+  }
+}
+@media screen and (min-width: 720px) {
+  footer {
+    .menu {
+      display: flex;
+      flex-flow: row;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  footer {
+    .menu {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+}

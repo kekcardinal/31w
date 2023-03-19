@@ -4,11 +4,15 @@ Template footer.php
 */
 ?>
 
-<footer>
-<h3>Pied de page</h3>
+<footer class="site_footer">
 
+<?php 
+wp_footer();
+wp_nav_menu(array(
+                    'menu' => 'menu-footer',
+                    'container' => 'nav'
+                )); ?>
 </footer>
 
-<?php wp_footer(); ?>
 </body>
 </html>
