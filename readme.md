@@ -1,3 +1,9 @@
+# Lien vers github : https://github.com/kekcardinal/31w/tree/tp1
+
+# Lien vers github carrousel : https://github.com/kekcardinal/carrousel-31w
+
+# Lien vers siteground : https://aecweb5.sg-host.com/
+
 # TP1 (25 points)
 
 ###### L\'objectif du TP1 :
