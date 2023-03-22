@@ -765,6 +765,7 @@ footer .menu-item a {
 .site_main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  /* background:transparent (pour image de bkground)*/
 }
 
 .site_footer {
