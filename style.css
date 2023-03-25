@@ -520,6 +520,10 @@ html {
   color: #FFF7EC;
 }
 
+.invisible {
+  display: none;
+}
+
 .recherche {
   display: flex;
   flex-wrap: nowrap;
@@ -704,6 +708,20 @@ html {
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
 }
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+.menu-cours-container .menu .menu-item a .cours_sigle {
+  padding: 1px 3px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours_sigle {
+    padding: 5px;
+  }
+}
 .menu-cours-container .menu .menu-item a .cours_titre {
   display: none;
 }
@@ -760,6 +778,7 @@ footer .menu-item a {
 
 .site_entete {
   grid-area: header;
+  background-color: transparent;
 }
 
 .site_main {

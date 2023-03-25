@@ -59,6 +59,9 @@ function cidweb_modifie_requete_principal( $query ) {
 	$title = substr($title, 7);
 	$title = "<div class='cours_sigle'>".$sigle."</div>"."<p class='cours_titre'>".wp_trim_words($title, 3, ' ... ')."</p>";
 	}
+	if($args->menu == '31w') {
+		if(substr($title,0,1) =='0'){$title = substr($title,1);}
+	}
 	return "<p>".$title."</p>";
 	}
 	add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);

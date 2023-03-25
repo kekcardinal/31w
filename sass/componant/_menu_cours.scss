@@ -25,7 +25,17 @@
       list-style-type: none;
 
       a {
+        display:flex;
+        align-items:center;
+        text-decoration:none;
+        font-variant:small-caps;
+
         .cours_sigle {
+          padding:1px 3px;
+
+          @media screen and (min-width: 1000px) {
+              padding:5px;
+          }
         }
 
         .cours_titre {
