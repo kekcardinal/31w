@@ -15,5 +15,6 @@ $duree = "90h";
     <h6><?= $titre_long ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
     <p><?php the_field('enseignant'); ?></p>
-    <p><?= $duree ?></p>
+    <p><?php the_field('domaine'); ?> </p>
+    <p><?php the_field('heures')?><?= $heures ?></p>
 </article>
