@@ -1,24 +1,14 @@
 <?php get_header() ?>
 <main class="site_main">
-    <!-- <h3 class="marge_entete">single.php</h3> -->
-    <section class="blocflex">
         <?php
-        if (have_posts()):
-            while (have_posts()):
-                the_post(); ?>
-                <article class="informations">
-                    <?php
-
-                    //titre
-                    the_title('<h1>', '</h1>');
-
-                    //contenu
-                    the_content(); ?>
-                </article>
-                <?php
-            endwhile;
-        endif;
+        if (in_category('cours'))
+        {
+            get_template_part("template-parts/single-cours");
+        }
+        elseif (in_category('31w'))
+        {
+            get_template_part("template-parts/single-notes");
+        }
         ?>
-        <section>
 </main>
 <?php get_footer(); ?>
