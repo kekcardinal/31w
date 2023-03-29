@@ -763,11 +763,20 @@ footer .menu-item a {
     display: flex;
     flex-flow: row;
   }
+  .widgets {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 720px) {
   footer .menu {
     display: flex;
     flex-flow: column;
+  }
+  .widgets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 /* -------------------------------layout --------------------------------*/
