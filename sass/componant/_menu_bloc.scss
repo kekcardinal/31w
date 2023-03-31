@@ -1,0 +1,15 @@
+.menu_bloc{
+    .menu{
+        display:flex;
+        flex-wrap:wrap;
+        list-style-type:none;
+        
+        .menu-item{
+            border:1px solid #aaa;
+            flex : 1 0 33%;
+            a{
+                font-size:2rem;
+            }
+        }
+    }
+}

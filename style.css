@@ -779,6 +779,24 @@ footer .menu-item a {
     justify-content: center;
   }
 }
+.menu_bloc .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.menu_bloc .menu .menu-item {
+  border: 1px solid #aaa;
+  flex: 1 0 33%;
+}
+.menu_bloc .menu .menu-item a {
+  font-size: 2rem;
+}
+
+.viewport {
+  min-height: 100vh;
+  padding: 0 3rem;
+}
+
 /* -------------------------------layout --------------------------------*/
 .site_aside {
   text-align: center;

@@ -12,6 +12,17 @@
         </div>
     </section>
 
+    <section class="viewport">
+        <h1>TP2</h1>
+        <h4>Auteur : Eddy Martin</h4>
+        <h4>Cours : 31w - Introduction à un gestionnaire de contenu</h4>
+        <?php wp_nav_menu(array(
+            "menu"=>"evenement",
+            "container"=>"nav",
+            "container_class"=>"menu_bloc"
+        )); ?>
+    </section>
+
     <section class="blocflex">
         <?php
         
