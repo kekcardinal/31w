@@ -1,5 +1,13 @@
 # Exercice #4 (5 points)
 
+## Ajout personnels
+
+- Ajout d'une barre de navigation pour les évènements
+- Ajout d'images dans cette meme barre de navigation avec l'aide d'une extension qui permettent à l'utilisateur de choisir des images pour chacun des onglets du menu
+- Ajout de champs personnalisés pour cours et cours-31w
+- Ajout de 3 sidebars dans le footer
+- Image d'avant plan était déja présente
+
 ###### L\'objectif de l'exercice #4:
 
 - Ajouter, gérer et utiliser des champs personnalisés
