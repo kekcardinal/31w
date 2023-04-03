@@ -14,13 +14,15 @@
 
                     //contenu
                     the_content(); ?>
-                </article>
 
-                <p><?php the_field('enseignant'); ?></p>
+<p><?php the_field('enseignant'); ?></p>
                 <p><?php the_field('domaine'); ?> </p>
                 <p><?php
                 $heures = " heures";
                 the_field('heures')?><?= $heures ?></p>
+                </article>
+
+               
                 <?php
             endwhile;
         endif;

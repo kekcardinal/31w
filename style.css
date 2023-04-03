@@ -792,9 +792,50 @@ footer .menu-item a {
   font-size: 2rem;
 }
 
-.viewport {
-  min-height: 100vh;
-  padding: 0 3rem;
+.attachment-large {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu_bloc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #002720;
+}
+.menu_bloc #menu-evenement {
+  align-items: center;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  min-height: 20vh;
+  flex: 1;
+}
+.menu_bloc #menu-evenement p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu_bloc #menu-evenement li {
+  border-style: none;
+}
+.menu_bloc #menu-evenement a {
+  text-decoration: none;
+}
+.menu_bloc #menu-evenement a span {
+  color: white;
+  padding: 0;
+}
+.menu_bloc #menu-evenement img {
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* -------------------------------layout --------------------------------*/

@@ -14,18 +14,20 @@
 
                     //contenu
                     the_content(); ?>
-                </article>
 
-                
                 <p><?php 
                 $difficulte = "Niveau de difficulte = ";?>
                 <?= $difficulte ?><?php the_field('difficulte'); 
-                ?>
+                ?> </p>
                 <p><?php $email = "Courriel = ";?>
                 <?= $email ?><?php the_field('email'); 
                 ?> </p>
+                </article>
+
+                
+           
             
-            </p>
+           
 
                 <?php
             endwhile;
