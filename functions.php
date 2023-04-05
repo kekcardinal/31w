@@ -67,6 +67,42 @@ function cidweb_modifie_requete_principal( $query ) {
 	}
 	add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
 
+	function perso_filtre_choix_menu($obj_menu, $arg){
+		//echo "/////////////////  obj_menu";
+		// var_dump($obj_menu);
+		//  echo "/////////////////  arg";
+		//var_dump($arg);
+		// die();
+			if ($arg->menu == "cours"){
+				foreach($obj_menu as $cle => $value)
+				{
+					//  print_r($value);
+					$value->title = substr($value->title,7);
+					$value->title = wp_trim_words($value->title,3,"...");
+					//echo $value->title . '<br>';
+				}
+			}
+		   return $obj_menu;
+		}
+		add_filter("wp_nav_menu_objects","perso_filtre_choix_menu", 10,2);
+		
+	function ajouter_description_class_menu( $items, $args ) {
+		// Vérifier si le menu correspondant est celui que vous souhaitez modifier
+		if ( 'evenement' === $args->menu ) {
+			foreach ( $items as $item ) {
+				// Récupérer le titre, la description et la classe personnalisée
+				$titre = $item->title;
+				$description = $item->description;
+				$classe = 'evenement_porte'; // Remplacer par le nom de la classe souhaitée
+	
+				// Ajouter la description et la classe personnalisée à l'élément de menu
+				$item->title .= '<p class="' . $classe . '">' . $description . '</p>';
+			}
+		}
+		return $items;
+	}
+	add_filter( 'wp_nav_menu_objects', 'ajouter_description_class_menu', 10, 2 );
+
 
 	// Enregistrer le sidebar
 function enregistrer_sidebar() {

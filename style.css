@@ -792,6 +792,10 @@ footer .menu-item a {
   font-size: 2rem;
 }
 
+.evenement_porte::after {
+  content: url(https://s2.svgbox.net/materialui.svg?ic=sensor_door);
+}
+
 .attachment-large {
   width: 100%;
   object-fit: cover;
@@ -819,6 +823,7 @@ footer .menu-item a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .menu_bloc #menu-evenement li {
   border-style: none;
