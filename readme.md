@@ -12,6 +12,9 @@
 -Sidebar à été fait à l'exercise
 -Il y a déja plusieurs champs personnalisés pour chaque type : notes cours 31w ou cours
 -Le carousel était déja fini
+-Les évènements avait été ajouter dans le dernier exercise
+-Chaque évènements ont des images thumbnail directement dans le menu (fait avec une extension) dans front-page
+-Chaque évènements ont 3 champs personnalisés : l'adresse, la date et l'heure
 -C'est tout!
 
 ## L\'objectif du TP2 :
