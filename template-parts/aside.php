@@ -6,7 +6,8 @@
         if (in_category("cours")){
             $lemenu = "cours";
         }
-       
+        if (in_category("galerie_photo"))
+        {   $lemenu = "menu_galerie" ;}
         wp_nav_menu(array(
             "menu" => $lemenu,
             "container" => "nav"
