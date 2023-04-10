@@ -1,5 +1,19 @@
 # TP2 (25 points)
 
+## Ce que j'ai ajouter
+
+-J'ai ajouter un template-part appeler galerie photo
+-J'ai donc adapter le menu pour ce template-part
+-Populer des articles en mettant une image d'avant plan
+-J'ai utiliser la fonction the_post_thumbnail pour affecter à la categorie la photo
+-Pour l'affichage de l'article c'est un affichage standard
+-Ajout d'un menu custom dans wordpress pour le aside de ce template part
+-La responsiveness de mon site était déja établi avant le tp2.
+-Sidebar à été fait à l'exercise
+-Il y a déja plusieurs champs personnalisés pour chaque type : notes cours 31w ou cours
+-Le carousel était déja fini
+-C'est tout!
+
 ## L\'objectif du TP2 :
 
 - Créer une page d'accueil interactive utiliser le modèle « front-page.php »
