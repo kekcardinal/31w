@@ -9,6 +9,10 @@
         {
             get_template_part("template-parts/single-notes");
         }
+        elseif (in_category('galerie_photo'))
+        {
+            get_template_part("template-parts/single-galerie_photo");
+        }
         ?>
 </main>
 <?php get_footer(); ?>
